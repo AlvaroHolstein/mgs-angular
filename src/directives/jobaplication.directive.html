@@ -1,3 +1,29 @@
-<div class="jumbotron">
-    <h1 class="text-center"> Job Aplication</h1>
+<div class="jumbotron-fluid">
+    <h1 class="text-center">Job Aplication</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" ng-repeat="card in cards">
+                <div class="card mx-auto" style="width: 80%;">
+                    <img ng-src="{{card.imgSrc}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{card.title | uppercase}}</h5>
+                        <ul>
+                            <li ng-repeat="item in card.listItems">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="padding-left: 20%;padding-top:20px;margin-top:20px;">
+                <p style="cursor: pointer" >
+                    <i class="fas fa-arrow-alt-circle-right showForm" ></i>
+                    Fill this form with also your CV and find your dream Job.
+                </p>
+                <button class="btn btn-outline-success showForm" ng-click="toogleForm()" style="cursor: pointer">Fill</button>
+            </div>
+            <div id="jobForm" class="col-md-12">
+                <h1 class="text-center">YEY</h1>
+            </div>
+        </div>
+    </div>
 </div>
