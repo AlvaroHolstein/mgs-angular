@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MGS Angular Site</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body ng-app="mgsApp">
+
+    <div ng-controller="controller1" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>{{title}}</h1>
+                <button id="btn" class="btn btn-outline-success">Clica-me</button>
+            </div>
+        </div>
+    </div>
+
+    <job-aplication></job-aplication>
+
+
+    <!-- Link CDN do Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- CDN' s do Jquery Popperjs e o js do bootstrap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        // document.getElementById('btn').addEventListener('click', () => console.log('js'))
+
+    </script>
+    <!-- Module -->
+    <script src="./app.js"></script>
+
+    <!-- Controller -->
+    <script src="./controllers/controller1.js"></script>
+
+    <!-- Directives -->
+    <script src="./directives/jobaplication.directive.js"></script>
+
+
+</body>
+
+</html>
