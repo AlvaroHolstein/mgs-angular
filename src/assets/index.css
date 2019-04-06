@@ -1,3 +1,36 @@
-.showForm {
-    color: red;
+div#head {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    height: 200px;
+    padding: 20% 1%;
+    background: url("./mosteiro_santa_clara.jpg") 50% 0 repeat-y fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    div#head {
+        padding: 4% 1%;
+    }
+}
+
+div#head::after {
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.fas.fa-arrow-alt-circle-right {
+    margin-right: 5px;
+}
+
+footer div{
+    background-color: rgb(171, 171, 238);
+}
+footer div div div ul{
+    list-style-type: none;
+}
+footer div div div ul li {
+    padding: 10px 0px; 
 }

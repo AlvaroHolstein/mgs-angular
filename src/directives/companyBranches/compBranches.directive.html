@@ -1,0 +1,12 @@
+<div class="container" style="padding-bottom: 30px;">
+    <div class="row">
+        <div class="col-md-12" ng-repeat="comp in comps">
+            <img ng-src="{{comp.img}}" ng-alt="{{comp.title}}">
+
+            <h4>{{comp.title | uppercase}}</h4>
+            <hr />
+            <p>{{comp.text}}</p>
+            <a ng-href="{{comp.link}}"><i class="fas fa-arrow-alt-circle-right"></i>Learn More</a>
+        </div>
+    </div>
+</div>

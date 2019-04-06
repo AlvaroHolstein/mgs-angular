@@ -1,10 +1,10 @@
-<div class="jumbotron-fluid">
-    <h1 class="text-center">Job Aplication</h1>
+<div class="jumbotron-fluid" style="background-color: #2e3141; color: white;">
+    <!-- <h1 class="text-center">Job Aplication</h1> -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 20px;">
         <div class="row">
             <div class="col-md-6" ng-repeat="card in cards">
-                <div class="card mx-auto" style="width: 80%;">
+                <div class="card mx-auto" style="width: 80%;background-color: #45558d;">
                     <img ng-src="{{card.imgSrc}}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">{{card.title | uppercase}}</h5>
@@ -14,15 +14,38 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12" style="padding-left: 20%;padding-top:20px;margin-top:20px;">
-                <p style="cursor: pointer" >
-                    <i class="fas fa-arrow-alt-circle-right showForm" ></i>
+            <div class="col-md-12" style="padding-left: 10%;padding-top:20px;margin-top:20px;">
+                <p style="cursor: pointer" ng-click="toogleForm()">
+                    <i class="fas fa-arrow-alt-circle-right showForm"></i>
                     Fill this form with also your CV and find your dream Job.
                 </p>
-                <button class="btn btn-outline-success showForm" ng-click="toogleForm()" style="cursor: pointer">Fill</button>
             </div>
-            <div id="jobForm" class="col-md-12">
-                <h1 class="text-center">YEY</h1>
+            <div id="jobForm" class="col-md-12" style="display: none;">
+                <div class="card" style="width: 60%;margin: 10% 15%;background-color: #45558d;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Aplication</h5>
+                        <form>
+                            <label for="name">Name:</label> <input id="name" type="text" class="form-control" required>
+                            <br>
+                            <label for="mail">E-mail:</label> <input type="text" id="mail" class="form-control"
+                                required>
+                            <br>
+                            <p>Curriculom Vitae:</p>
+                            <div class="input-group mb-3">
+
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                        aria-describedby="inputGroupFileAddon01" required>
+                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-outline-success">Submit Aplication</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

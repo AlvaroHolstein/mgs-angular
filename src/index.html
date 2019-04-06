@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MGS Angular Site</title>
 
-    <link rel="stylesheet" src="./assets/index2.css">
+    <link rel="stylesheet" href="/assets/index.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -23,7 +23,7 @@
 <body ng-app="mgsApp">
 
     <div ng-controller="controller1" class="container-fluid">
-        <div class="row">
+        <div class="row" id="head">
             <div class="col-md-12 text-center">
                 <h1>{{title}}</h1>
                 <button id="btn" class="btn btn-outline-success">Clica-me</button>
@@ -31,8 +31,9 @@
         </div>
     </div>
 
+    <comp-branches></comp-branches>
     <job-aplication></job-aplication>
-
+    <footer-dire></footer-dire>
 
 
     <!-- Link CDN do Angular -->
@@ -56,6 +57,8 @@
 
     <!-- Directives -->
     <script src="./directives/jobaplication.directive.js"></script>
+    <script src="./directives/companyBranches/compBranches.directive.js"></script>
+    <script src="./directives/footer/footer.directive.js"></script>
 </body>
 
 </html>

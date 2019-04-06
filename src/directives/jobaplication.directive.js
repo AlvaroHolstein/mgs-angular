@@ -27,7 +27,10 @@ app.directive('jobAplication', function () {
             scope.toogleForm = function () {
 
                 console.log('ata')
-                $('#jobForm').toggle();
+                $('#jobForm').slideToggle({
+                    duration: 'slow',
+                    easing: 'linear'
+                });
             }
         }
     }
