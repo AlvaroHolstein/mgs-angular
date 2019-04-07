@@ -1,14 +1,55 @@
 div#head {
     background-attachment: fixed !important;
     background-size: cover !important;
-    height: 200px;
-    padding: 20% 1%;
+    height: 350px;
+    padding: 10% 1% 30% 1%;
     background: url("./mosteiro_santa_clara.jpg") 50% 0 repeat-y fixed;
+    color: white;
+}
+img.imgnavbar {
+    width: 140px;
+    height: 55px;
+}
+.navbar {
+    padding: 0rem 1rem !important; 
+}
+.navbar-toggler-icon {
+    color: black !important;
+}
+div.apresentationDiv {
+    padding-left: 40px !important;
+}
+
+div.titleDiv {
+    background-color: rgba(0, 0, 240, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+div.titleDiv hr {
+    border-color: red;
+}
+
+.fab.fa-android {
+    color: red;
+    font-size: 60px;
+    background-color: rgba(250, 235, 215, 0.5);
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
     div#head {
         padding: 4% 1%;
+    }
+    img.imgnavbar {
+        width: 100px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    div.jumbotron-fluid div.container-fluid div.row :nth-child(1) {
+        margin-top: 20px;
     }
 }
 
@@ -21,16 +62,19 @@ div#head::after {
     position: absolute;
     z-index: -1;
 }
+
 .fas.fa-arrow-alt-circle-right {
     margin-right: 5px;
 }
 
-footer div{
+footer div {
     background-color: rgb(171, 171, 238);
 }
-footer div div div ul{
+
+footer div div div ul {
     list-style-type: none;
 }
+
 footer div div div ul li {
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
